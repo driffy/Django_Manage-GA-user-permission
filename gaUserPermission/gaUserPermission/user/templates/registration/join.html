@@ -1,0 +1,6 @@
+<form method="POST">
+  {% csrf_token %}
+  {{ formsetUser.as_p }}
+  {{ formsetProfile.as_p }}
+  <button type="submit">Save</button>
+</from>
